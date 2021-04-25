@@ -15,7 +15,7 @@ public class Test {
 
         String enumAsString = new ObjectMapper()
                 .writeValueAsString(TypeEnumWithValue.TYPE1);
-        System.out.println(enumAsString);
+        System.out.println(enumAsString); // "Type A"
 
         assertThat(enumAsString, is("\"Type A\""));
     }
