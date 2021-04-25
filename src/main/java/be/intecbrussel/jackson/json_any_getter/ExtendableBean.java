@@ -12,7 +12,7 @@ public class ExtendableBean {
         this.name = name;
     }
 
-    @JsonAnyGetter
+    @JsonAnyGetter(enabled = false)
     public Map<String, String> getProperties() {
         return properties;
     }
