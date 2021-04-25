@@ -1,4 +1,4 @@
-package be.intecbrussel.jackson.json_getter;
+package be.intecbrussel.jackson.e02_json_getter;
 
 import com.fasterxml.jackson.annotation.JsonGetter;
 

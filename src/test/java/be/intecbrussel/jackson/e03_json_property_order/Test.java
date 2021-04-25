@@ -1,4 +1,4 @@
-package be.intecbrussel.jackson.json_getter;
+package be.intecbrussel.jackson.e03_json_property_order;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -8,14 +8,14 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 public class Test {
     @org.junit.Test
-    public void whenSerializingUsingJsonGetter_thenCorrect()
+    public void whenSerializingUsingJsonPropertyOrder_thenCorrect()
             throws JsonProcessingException {
 
         MyBean bean = new MyBean(1, "My bean");
 
         String result = new ObjectMapper().writeValueAsString(bean);
-        System.out.println(result); // {"id":1,"name":"My bean"} with @JsonGetter("name")
-                                    // {"id":1,"theName":"My bean"} without @JsonGetter("name")
+        System.out.println(result);
+
         assertThat(result, containsString("My bean"));
         assertThat(result, containsString("1"));
     }

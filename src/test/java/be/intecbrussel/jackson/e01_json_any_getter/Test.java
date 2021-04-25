@@ -1,4 +1,4 @@
-package be.intecbrussel.jackson.json_any_getter;
+package be.intecbrussel.jackson.e01_json_any_getter;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import static org.hamcrest.CoreMatchers.containsString;
